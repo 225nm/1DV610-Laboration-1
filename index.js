@@ -3,17 +3,33 @@
  *
  * @author Erik Björnholm <eb225nm@student.lnu.se>
  */
+import chalk from "chalk";
+const log = console.log;
 
-/**
- * Prints the users name to the console.
- */
+// List of compliments.
+const compliments = [
+  "handsome",
+  "beautiful",
+  "amazing",
+  "awesome",
+  "charming",
+  "elegant",
+  "intelligent",
+  "kind",
+  "lovely",
+  "thoughtful",
+];
+
+// Greets the user with a random compliment highlighted in pink.
 function helloUser() {
   const name = process.argv[2];
 
-  if (name === null || name === undefined) {
-    console.log("You need to write a name");
+  if (name === undefined) {
+    log("You need to write a name");
   } else {
-    console.log("Hello " + name);
+    const index = Math.floor(Math.random() * compliments.length);
+    const compliment = compliments[index];
+    log("Hello " + name + ", you are " + chalk.bgMagenta(compliment) + " today!");
   }
 }
 
