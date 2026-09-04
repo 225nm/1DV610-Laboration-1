@@ -1,0 +1,21 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "Det här är ditt privata GitLab-repo för kursens första laborationsuppgift.",
+  "homepage": "https://github.com/225nm/1DV610-Laboration-1#readme",
+  "bugs": {
+    "url": "https://github.com/225nm/1DV610-Laboration-1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/225nm/1DV610-Laboration-1.git"
+  },
+  "license": "ISC",
+  "author": "eb225nm",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
